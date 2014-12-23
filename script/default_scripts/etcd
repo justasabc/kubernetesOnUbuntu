@@ -1,0 +1,9 @@
+# Etcd Upstart and SysVinit configuration file
+
+# Customize etcd location 
+# ETCD="/opt/bin/etcd"
+
+# Use ETCD_OPTS to modify the start/restart options
+ETCD_OPTS="-name 162 -addr 10.10.103.162:4001 -peer-addr 10.10.103.162:7001 -peers=10.10.103.162:7001,10.10.103.223:7001"
+
+# Add more envionrment settings used by etcd here
